@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Linking to external stylesheet and JavaScript -->
+    <link rel="stylesheet" type="text/css" href="Design.css">
+    <script src="WebCode.js"></script>
+
+    <!-- Setting viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Header section with background image -->
+    <div class="smallhead">
+        <!-- Background Image for the header -->
+        <img src="Header Image for Current.jpg" alt="Bushfire" class="background-image">
+
+        <!-- Content overlayed on the background image -->
+        <div class="head-content">
+            <!-- Main title for the page -->
+            <h1>Current Fire Map</h1>
+        </div>
+    </div>
+
+    <!-- Navigation bar with links to other pages of the website -->
+    <div class="navigationbar">
+        <a href="Home - Adelaide Hills Bushfire Preparation.html" class="navA">Home</a>
+        <a href="About This Webiste.html" class="navA">About</a>
+        <a href="Contact Page.html" class="navA">Contacts</a>
+    </div>
+
+    <!-- Section containing the CFS Fire Map -->
+    <div class="maps">
+        <h2>CFS Fire Map</h2>
+        <!-- iFrame embedding the map from an external source -->
+        <iframe class="Map Embed" title="Current CFS Site" style="border: solid black" width="70%" height="500"
+            src="https://apps.geohub.sa.gov.au/CFSMap/index.html">
+        </iframe>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Footer showing the source of the embedded map -->
+    <div class="subtitle">
+        <p>Map sourced from the <a href="https://www.cfs.sa.gov.au/warnings-restrictions/warnings/incidents-warnings/"
+                target="_blank" rel="noopener noreferrer">CFS: Incidents and Warnings</a>
+        </p>
+    </div>
+</body>
+
+</html>

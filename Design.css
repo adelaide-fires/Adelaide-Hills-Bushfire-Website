@@ -1,0 +1,243 @@
+/* Whole document attributes */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fceed1;
+}
+
+/* Default styling with a shared font family */
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+.checklist,
+.checksummer,
+.checkspring,
+.checkautumn,
+.checkwinter,
+.navA,
+.active {
+    font-family: 'Gill Sans', Helvetica, sans-serif;
+}
+
+/* Remove underlines from all anchor links and set default link color */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Style for header container */
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for header titles */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding: 20;
+}
+
+/* Styling for description elements within header */
+.description {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Photo credit styling, pushed to bottom and right */
+.credit {
+    font-size: 10px;
+    color: white;
+    text-align: right;
+    margin-top: auto;
+    margin-right: 10px;
+}
+
+/* Stylings for the background images */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+/* Styling for the main navigation bar */
+.navigationbar {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #ff7d56;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+
+/* Styles applied to regular navigation links and the active page link */
+.navA,
+.active {
+    float: left;
+    color: #ff7d56;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border-right: solid rgb(99, 0, 0);
+    border-top: solid rgb(99, 0, 0);
+    border-bottom: solid rgb(99, 0, 0);
+}
+
+/* On hover, navigation links change their background and text color */
+.navigationbar a:hover {
+    background-color: #d45336;
+    color: black;
+}
+
+/* Styling specifically for the active navigation link */
+.navigationbar a.active {
+    background-color: #923318;
+    color: white;
+}
+
+/* Media query to handle navigation bar layout for screens narrower than 768px */
+@media (max-width: 768px) {
+    .navigationbar {
+        flex-direction: column;
+    }
+}
+
+/* Styling for rows on home page */
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fceed1;
+}
+
+/* Styling applied to boxes on home page */
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    flex: 1;
+    max-width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ced59f;
+    border: 1px solid #abb475;
+    margin: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hover effect for boxes to indicate interactivity */
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    background-color: #8e975b;
+    border: 1px solid #666d42;
+}
+
+/* Styles for smaller headers */
+.smallhead {
+    color: white;
+    padding: 20;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Map section stylings */
+.maps {
+    justify-content: center;
+    text-align: center;
+}
+
+/* Importance container styling */
+.importance {
+    justify-content: center;
+    text-align: center;
+}
+
+/* Subtitle section with a specific background color */
+.subtitle {
+    justify-content: center;
+    text-align: center;
+    background-color: #ced59f;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+/* Common styles applied to all checklist elements */
+.checklist,
+.checkspring,
+.checksummer,
+.checkautumn,
+.checkwinter {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Season-specific background images for checklists */
+.checkspring {
+    background-image: url('Spring.jpg');
+    color: white;
+}
+
+.checksummer {
+    background-image: url('Summer.jpg');
+    color: white;
+}
+
+.checkautumn {
+    background-image: url('Autumn.jpeg');
+    color: white;
+}
+
+.checkwinter {
+    background-image: url('Winter.jpg');
+    color: white;
+}
+
+/* Styling for footer notes */
+.disclaimer {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
